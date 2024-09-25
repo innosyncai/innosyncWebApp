@@ -74,7 +74,7 @@ export default function Hero() {
             if (distance < 100) {
               ctx.beginPath();
               ctx.strokeStyle = `rgba(0, 123, 255, ${1 - distance / 100})`;
-              ctx.lineWidth = 0.5;
+              ctx.lineWidth = 1;
               ctx.moveTo(particles[i].x, particles[i].y);
               ctx.lineTo(particles[j].x, particles[j].y);
               ctx.stroke();
